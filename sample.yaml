@@ -1,0 +1,10 @@
+---
+- name: Create Directory
+  hosts: 139.59.186.220,139.59.176.98
+  become: true
+  tasks:
+    - name: Create directory
+      file:
+        path: /path/to/ritvik
+        state: directory
+        mode: "0755"
