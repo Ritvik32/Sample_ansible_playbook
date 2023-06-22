@@ -5,6 +5,6 @@
   tasks:
     - name: Create directory
       file:
-        path: /path/to/ritvik
+        path: /ritvik
         state: directory
         mode: "0755"
