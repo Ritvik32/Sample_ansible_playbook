@@ -1,13 +1,29 @@
+#---
+#- name: install go with script
+ # hosts: 134.209.24.67,134.209.23.177,134.209.23.87
+  #become: true
+
+
+
+  #tasks:
+  #- name: run install_script
+   # script: install_script.sh
+
+
 ---
-- name: install go with script
+- name: Install Go with Script
   hosts: 134.209.24.67,134.209.23.177,134.209.23.87
   become: true
 
-
-
   tasks:
-  - name: run install_script
-    script: install_script.sh
+    - name: Download install_script.sh
+      get_url:
+        url: "https://github.com/Ritvik32/Sample_ansible_playbook/blob/main/install_script.sh"
+        dest: ~/install_script.sh
+        mode: "0755"
+
+    - name: Run install_script.sh
+      script: ~/install_script.sh
 
 
 
