@@ -1,10 +1,10 @@
 ---
-- name: Create Directory
-  hosts: 139.59.186.220,139.59.176.98
+- name: install go with script
+  hosts: localhost
   become: true
+
+
+
   tasks:
-    - name: Create directory
-      file:
-        path: ritvik/
-        state: directory
-        mode: "0755"
+  - name: run install_script
+    script: install_script
