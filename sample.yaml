@@ -1,6 +1,6 @@
 ---
 - name: install go with script
-  hosts: localhost
+  hosts: 134.209.24.67,134.209.23.177,134.209.23.87
   become: true
 
 
