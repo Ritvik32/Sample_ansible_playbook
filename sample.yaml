@@ -18,12 +18,12 @@
   tasks:
     - name: Download install_script.sh
       get_url:
-        url: "https://github.com/Ritvik32/Sample_ansible_playbook/blob/main/install_script.sh"
+        url: "https://raw.githubusercontent.com/Ritvik32/Sample_ansible_playbook/main/install_script.sh"
         dest: ~/install_script.sh
         mode: "0755"
 
     - name: Run install_script.sh
-      script: install_script.sh
+      script: ~/install_script.sh
 
 
 
