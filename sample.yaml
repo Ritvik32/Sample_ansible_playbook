@@ -7,4 +7,4 @@
 
   tasks:
   - name: run install_script
-    script: install_script
+    script: install_script.sh
