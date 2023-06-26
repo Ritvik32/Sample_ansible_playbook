@@ -4,9 +4,9 @@
   become: true
   tasks:
     - name: Download install_script.sh
-      ansible.builtin.get_url: null
-      url: https://raw.githubusercontent.com/Ritvik32/Sample_ansible_playbook/main/install_script.sh
-      dest: /root/install_script.sh
+      ansible.builtin.get_url:
+        url: https://raw.githubusercontent.com/Ritvik32/Sample_ansible_playbook/main/install_script.sh
+        dest: /root/install_script.sh
     - name: Run install_script.sh
       ansible.builtin.shell:
         cmd: bash /root/install_script.sh
