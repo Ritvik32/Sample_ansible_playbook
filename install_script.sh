@@ -1,22 +1,22 @@
 #!/bin/bash
 ​
- apt-get update
+sudo apt-get update
 ​
- apt-get -y upgrade
+sudo apt-get -y upgrade
 ​
- apt-get install build-essential jq -y
+sudo apt-get install build-essential jq -y
 ​
- apt-get install libssl-dev
+sudo apt-get install libssl-dev
 ​
- apt install libseccomp-dev
+sudo apt install libseccomp-dev
 ​
- apt install pkg-config
+sudo apt install pkg-config
 ​
 wget https://golang.org/dl/go1.19.5.linux-amd64.tar.gz
 ​
- tar -xvf go1.19.5.linux-amd64.tar.gz
+sudo tar -xvf go1.19.5.linux-amd64.tar.gz
 ​
- mv go /usr/local
+sudo mv go /usr/local
 ​
 mkdir -p go/src/github.com
 mkdir go/bin
@@ -33,6 +33,5 @@ echo 'export GOBIN=$GOPATH/bin' >> ~/.bashrc
 echo 'export PATH=$PATH:/usr/local/go/bin:$GOBIN' >> ~/.bashrc
 . ~/.bashrc
 ​
- rm -rf go1.19.5.linux-amd64.tar.gz
+sudo rm -rf go1.19.5.linux-amd64.tar.gz
 ​
-
