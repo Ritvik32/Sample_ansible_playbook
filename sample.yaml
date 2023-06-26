@@ -1,15 +1,3 @@
-#---
-#- name: install go with script
- # hosts: 134.209.24.67,134.209.23.177,134.209.23.87
-  #become: true
-
-
-
-  #tasks:
-  #- name: run install_script
-   # script: install_script.sh
-
-
 ---
 - name: Install Go with Script
   hosts: 143.110.174.135,167.172.49.121,134.209.22.83
@@ -21,6 +9,4 @@
         dest: /root/install_script.sh
         mode: "755"
     - name: Run install_script.sh
-      command: sh /install_script.sh
-
-
+      command: bash /root/install_script.sh
