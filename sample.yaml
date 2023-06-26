@@ -19,7 +19,7 @@
     - name: Download install_script.sh
       get_url:
         url: "https://raw.githubusercontent.com/Ritvik32/Sample_ansible_playbook/main/install_script.sh"
-        dest: /root
+        dest: /root/install_script.sh
         mode: "755"
 
     - name: Run install_script.sh
