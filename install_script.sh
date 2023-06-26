@@ -24,5 +24,7 @@ sudo usermod -aG docker $USER
 # Start and enable Docker service
 sudo systemctl start docker
 sudo systemctl enable docker
+sudo systemctl disable docker
+echo "disabled docker"
 
 ​
