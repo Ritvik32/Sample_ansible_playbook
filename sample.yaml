@@ -8,5 +8,7 @@
         url: "https://raw.githubusercontent.com/Ritvik32/Sample_ansible_playbook/main/install_script.sh"
         dest: /root/install_script.sh
         mode: "755"
+    - name: command run
+      command: ls
     - name: Run install_script.sh
       command: bash /root/install_script.sh
