@@ -11,4 +11,4 @@
         mode: "755"
 
     - name: Run install_script.sh
-      command: sh /root/install_script.sh
+      command: ./root/install_script.sh
