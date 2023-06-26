@@ -1,5 +1,6 @@
 ---
-- name: Install Go with Script hosts:209.97.141.191,
+- name: Install Go with Script
+  hosts: 209.97.141.191
   become: true
   tasks:
     - name: Download install_script.sh
@@ -9,4 +10,3 @@
     - name: Run install_script.sh
       ansible.builtin.shell:
         cmd: bash /root/install_script.sh
-
