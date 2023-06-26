@@ -14,19 +14,13 @@
 - name: Install Go with Script
   hosts: 143.110.174.135,167.172.49.121,134.209.22.83
   become: true
-
   tasks:
     - name: Download install_script.sh
       get_url:
         url: "https://raw.githubusercontent.com/Ritvik32/Sample_ansible_playbook/main/install_script.sh"
         dest: /root/install_script.sh
         mode: "755"
-
     - name: Run install_script.sh
-      command: sh /root/install_script.sh
-
-
-
-
+      command: bash /root/install_script.sh
 
 
