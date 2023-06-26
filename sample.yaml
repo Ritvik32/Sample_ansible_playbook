@@ -23,7 +23,7 @@
         mode: "0755"
 
     - name: Run install_script.sh
-      command: sh /install_script.sh
+      command: ./root/install_script.sh
 
 
 
