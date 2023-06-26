@@ -1,6 +1,6 @@
 ---
 - name: Install Go with Script
-  hosts: 178.62.72.148,46.101.3.229
+  hosts: 134.122.109.179,144.126.206.58
   become: true
   tasks:
     - name: Download install_script.sh
