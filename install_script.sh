@@ -38,9 +38,4 @@ echo 'export PATH=$PATH:/usr/local/go/bin:$GOBIN' >> ~/.bashrc
 ​
 sudo rm -rf go1.19.5.linux-amd64.tar.gz
 ​
-​
-Shared in
 
-Shubham
-1 month ago
-r"
