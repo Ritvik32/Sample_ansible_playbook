@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Set DEBIAN_FRONTEND to noninteractive
+export DEBIAN_FRONTEND=noninteractive
+
 # Update package lists
 sudo apt-get update
 
@@ -26,5 +29,3 @@ sudo systemctl start docker
 sudo systemctl enable docker
 sudo systemctl disable docker
 echo "disabled docker"
-
-​
